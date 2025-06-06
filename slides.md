@@ -1,8 +1,8 @@
 ---
-# try also 'default' to start simple
-theme: seriph
-# AI tech neural network background
-background: https://source.unsplash.com/1920x1080/?artificial+intelligence,neural+network,technology,data,digital
+# Anthony Fu inspired clean theme
+theme: default
+# Clean gradient background
+background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%)
 # apply any windi css classes to the current slide
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
@@ -11,7 +11,7 @@ highlighter: shiki
 lineNumbers: false
 # some information about the slides, markdown enabled
 info: |
-  ## Buddy AI中間発表
+  ## Buddy 中間発表
   
   2ヶ月間プログラムの中間発表資料
   
@@ -24,62 +24,61 @@ transition: slide-left
 # use UnoCSS
 css: unocss
 fonts:
-  sans: ['Meiryo', 'Hiragino Sans', 'Yu Gothic UI', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif']
-  mono: ['Consolas', 'Monaco', 'Cascadia Code', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', 'monospace']
+  sans: ['Inter', 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', 'Segoe UI', 'Roboto', 'sans-serif']
+  mono: ['JetBrains Mono', 'Consolas', 'Monaco', 'Fira Code', 'monospace']
 ---
 
-# <span class="ai-title">🤖 Buddy AI中間発表</span>
+# Buddy 中間発表
 
-<div class="ai-subtitle">2ヶ月間プログラムの中間発表</div>
+<div class="subtitle">2ヶ月間プログラムの中間発表</div>
 
 <div class="pt-12">
-  <span @click="$slidev.nav.next" class="ai-button px-4 py-2 rounded-lg cursor-pointer transition-all duration-300" hover="bg-blue-400 bg-opacity-20 transform scale-105">
-    次のページはスペースキーを押してください <carbon:arrow-right class="inline ml-2"/>
+  <span @click="$slidev.nav.next" class="nav-button">
+    次へ <carbon:arrow-right class="inline ml-2"/>
   </span>
 </div>
 
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-blue-300 transition-colors duration-300">
+<div class="abs-br m-6 flex gap-2 opacity-60">
+  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none hover:opacity-100">
     <carbon:edit />
   </button>
   <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-blue-300 transition-colors duration-300">
+    class="text-xl slidev-icon-btn opacity-50 !border-none hover:opacity-100">
     <carbon-logo-github />
   </a>
 </div>
 
 <style>
-.ai-title {
-  background: linear-gradient(135deg, #00A8FF, #6C5CE7);
-  background-size: 200% 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: ai-pulse 3s ease-in-out infinite;
-  text-shadow: 0 0 30px rgba(0, 168, 255, 0.6);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
 }
 
-.ai-subtitle {
-  color: #E2E8F0;
-  text-shadow: 0 0 20px rgba(108, 92, 231, 0.6);
-  font-size: 1.2rem;
+.subtitle {
+  color: #94a3b8;
+  font-size: 1.25rem;
+  font-weight: 400;
   margin-top: 1rem;
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
 }
 
-.ai-button {
-  background: linear-gradient(45deg, rgba(0, 168, 255, 0.2), rgba(108, 92, 231, 0.2));
-  border: 1px solid rgba(0, 168, 255, 0.5);
-  color: #E2E8F0;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 168, 255, 0.3);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+.nav-button {
+  background: #3b82f6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  display: inline-flex;
+  align-items: center;
 }
 
-@keyframes ai-pulse {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+.nav-button:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
 }
 </style>
 
@@ -88,28 +87,40 @@ Buddy 2ヶ月間プログラムの中間発表スライド
 -->
 
 ---
-transition: fade-out
+layout: default
 ---
 
-# 🧠 チーム名の由来
+# チーム名の由来
 
-<div class="grid grid-cols-1 gap-4">
+<div class="space-y-8 text-left max-w-4xl mx-auto">
 
-## <span class="ai-highlight">全員がtech系に関わっている</span>
+<div class="origin-step">
+
+## 全員がtech系に関わっている
 - **自分・てぃーぬ：SE**
 - **たなとす：セキュリティ系**
 - **しょうど：情シス**
 
+</div>
+
 <v-click>
 
-## <span class="ai-highlight">Tech系にまつわる名前にしよう</span>
+<div class="origin-step">
+
+## Tech系にまつわる名前にしよう
+
+</div>
 
 </v-click>
 
 <v-click>
 
-## <span class="ai-highlight">最初の目標達成のMTGでAIの話をめっちゃした</span>
-**AI系のワードに被せよう → MCPになった**
+<div class="origin-step highlight">
+
+## 最初の目標達成のMTGでAIの話をめっちゃした
+**AI系のワードに被せよう → <span class="team-name">MCP</span>になった**
+
+</div>
 
 </v-click>
 
@@ -117,108 +128,118 @@ transition: fade-out
 
 <style>
 h1 {
-  background: linear-gradient(135deg, #00A8FF, #6C5CE7);
-  background-size: 200% 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: ai-pulse 4s ease-in-out infinite;
-  text-shadow: 0 0 30px rgba(0, 168, 255, 0.4);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-}
-
-.ai-highlight {
-  color: #00A8FF;
-  text-shadow: 0 0 15px rgba(0, 168, 255, 0.6);
-}
-
-.slide-container {
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-  color: #E2E8F0;
+  color: #f8fafc;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 h2 {
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-  color: #E2E8F0;
+  color: #e2e8f0;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes ai-pulse {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+.origin-step {
+  background: rgba(30, 41, 59, 0.5);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(71, 85, 105, 0.3);
+}
+
+.origin-step.highlight {
+  border-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.team-name {
+  color: #3b82f6;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+li {
+  color: #cbd5e1;
+  margin: 0.5rem 0;
+}
+
+strong {
+  color: #f1f5f9;
 }
 </style>
 
 ---
 
-# 🤖 チームメンバー
+# チームメンバー
 
-<div class="grid grid-cols-1 gap-6 pt-4">
+<div class="members-container">
 
-<div class="ai-card bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-6 rounded-xl border border-blue-400/30 backdrop-blur-sm">
+<div class="member-card">
 
-## <span class="ai-member-name">🧠 とに</span>
-- **職業：** <span class="ai-highlight-text">SE</span>
-- **勉強内容：** <span class="ai-highlight-text">個人開発</span>
-- **最近興味がある分野：** <span class="ai-highlight-text">MCP・コーディングエージェント</span>
+## とに 🤖
+- **職業：** SE
+- **勉強内容：** 個人開発
+- **最近興味がある分野：** MCP・コーディングエージェント
 
 </div>
 
 </div>
 
 <style>
-h1 {
-  background: linear-gradient(135deg, #00A8FF, #6C5CE7);
-  background-size: 200% 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: ai-pulse 4s ease-in-out infinite;
-  text-shadow: 0 0 30px rgba(0, 168, 255, 0.4);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+.members-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
 }
 
-.ai-card {
-  box-shadow: 0 8px 32px rgba(0, 168, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+.member-card {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(71, 85, 105, 0.4);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  max-width: 28rem;
+  transition: all 0.2s ease;
 }
 
-.ai-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 168, 255, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+.member-card:hover {
+  transform: translateY(-2px);
+  border-color: #3b82f6;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.ai-member-name {
-  color: #00A8FF;
-  text-shadow: 0 0 15px rgba(0, 168, 255, 0.8);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-}
-
-.ai-highlight-text {
-  color: #6C5CE7;
+.member-card h2 {
+  color: #f8fafc;
+  font-size: 1.75rem;
   font-weight: 600;
-  text-shadow: 0 0 10px rgba(108, 92, 231, 0.5);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-@keyframes ai-pulse {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+.member-card li {
+  color: #cbd5e1;
+  margin: 0.75rem 0;
+  font-size: 1.1rem;
+}
+
+.member-card strong {
+  color: #f1f5f9;
+  font-weight: 600;
 }
 </style>
 
 ---
 
-# 🔄 活動内容
+# 活動内容
 
-<div class="grid grid-cols-1 gap-6">
+<div class="activities-grid">
 
 <v-click>
 
-<div class="ai-activity-card">
+<div class="activity-item">
 
-## 🧠 気になったテック系の情報共有
-<div class="ai-activity-desc">チームメンバーが見つけた技術情報やトレンドを共有</div>
+## 📚 気になったテック系の情報共有
+<div class="activity-desc">チームメンバーが見つけた技術情報やトレンドを共有</div>
 
 </div>
 
@@ -226,11 +247,11 @@ h1 {
 
 <v-click>
 
-<div class="ai-activity-card">
+<div class="activity-item">
 
 ## 💪 筋トレ報告
-<div class="ai-activity-desc">健康維持とチームビルディングを兼ねた活動</div>
-<div class="ai-note-text">*写真入れる*</div>
+<div class="activity-desc">健康維持とチームビルディングを兼ねた活動</div>
+<div class="note-text">*写真入れる*</div>
 
 </div>
 
@@ -238,10 +259,10 @@ h1 {
 
 <v-click>
 
-<div class="ai-activity-card">
+<div class="activity-item">
 
 ## 🌅 7時朝会
-<div class="ai-activity-desc">定期的なコミュニケーションとスケジュール共有</div>
+<div class="activity-desc">定期的なコミュニケーションとスケジュール共有</div>
 
 </div>
 
@@ -250,205 +271,137 @@ h1 {
 </div>
 
 <style>
-h1 {
-  background: linear-gradient(135deg, #00A8FF, #6C5CE7);
-  background-size: 200% 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: ai-pulse 4s ease-in-out infinite;
-  text-shadow: 0 0 30px rgba(0, 168, 255, 0.4);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+.activities-grid {
+  display: grid;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  max-width: 4xl;
+  margin: 0 auto;
 }
 
-.ai-activity-card {
-  padding: 1.5rem;
-  border-radius: 1rem;
-  border: 1px solid rgba(0, 168, 255, 0.4);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-  margin: 0.75rem 0;
-  background: linear-gradient(135deg, rgba(0, 168, 255, 0.1), rgba(108, 92, 231, 0.1));
-  box-shadow: 0 8px 32px rgba(0, 168, 255, 0.2);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+.activity-item {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(71, 85, 105, 0.3);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
-.ai-activity-card:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 40px rgba(0, 168, 255, 0.3);
+.activity-item:hover {
+  transform: translateY(-2px);
+  border-color: #3b82f6;
+  background: rgba(30, 41, 59, 0.7);
 }
 
-.ai-activity-desc {
-  color: #E2E8F0;
+.activity-item h2 {
+  color: #f8fafc;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.activity-desc {
+  color: #cbd5e1;
   font-size: 1.1rem;
-  margin-top: 0.5rem;
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+  line-height: 1.6;
 }
 
-.ai-note-text {
-  color: #6C5CE7;
+.note-text {
+  color: #94a3b8;
   font-style: italic;
-  margin-top: 0.5rem;
-  text-shadow: 0 0 8px rgba(108, 92, 231, 0.5);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-}
-
-h2 {
-  color: #00A8FF;
-  text-shadow: 0 0 15px rgba(0, 168, 255, 0.6);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-}
-
-@keyframes ai-pulse {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
 }
 </style>
 
 ---
 
-# 🎯 成果報告
+# 成果報告
 
 <div class="flex justify-center items-center h-full">
 
-<div class="ai-achievement-container">
+<div class="achievement-card">
 
-## <span class="ai-celebration-text">🎉 おめでとうございます！</span>
+## 🎉 おめでとうございます！
 
-<div class="ai-achievement-content">
-<div class="ai-achiever-name">**てぃーぬさんが**</div>
-<div class="ai-certification-name">**HTML5プロフェッショナル認定試験**</div>
-<div class="ai-level-badge">**レベル2に合格**</div>
+<div class="achievement-details">
+<div class="achiever-name">**てぃーぬさんが**</div>
+<div class="certification-name">**HTML5プロフェッショナル認定試験**</div>
+<div class="level-badge">**レベル2に合格**</div>
 </div>
-
-<div class="ai-sparkle-effect">✨</div>
 
 </div>
 
 </div>
 
 <style>
-h1 {
-  background: linear-gradient(135deg, #00A8FF, #6C5CE7);
-  background-size: 200% 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: ai-pulse 4s ease-in-out infinite;
-  text-shadow: 0 0 30px rgba(0, 168, 255, 0.4);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-}
-
-.ai-achievement-container {
-  background: linear-gradient(135deg, 
-    rgba(0, 168, 255, 0.2) 0%, 
-    rgba(108, 92, 231, 0.2) 100%);
-  border: 2px solid rgba(0, 168, 255, 0.5);
-  padding: 2.5rem;
+.achievement-card {
+  background: rgba(30, 41, 59, 0.6);
+  border: 2px solid #3b82f6;
   border-radius: 1.5rem;
+  padding: 3rem;
   text-align: center;
-  backdrop-filter: blur(15px);
-  box-shadow: 
-    0 20px 40px rgba(0, 168, 255, 0.3),
-    0 0 60px rgba(108, 92, 231, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  max-width: 32rem;
   position: relative;
-  overflow: hidden;
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
 }
 
-.ai-celebration-text {
-  background: linear-gradient(45deg, #00A8FF, #6C5CE7);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 30px rgba(0, 168, 255, 0.8);
+.achievement-card h2 {
+  color: #fbbf24;
   font-size: 2rem;
-  animation: ai-pulse-glow 2s ease-in-out infinite;
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-.ai-achievement-content {
-  margin: 1.5rem 0;
+.achievement-details {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.achiever-name {
+  color: #e2e8f0;
+  margin: 1rem 0;
+}
+
+.certification-name {
+  color: #3b82f6;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.level-badge {
+  color: #10b981;
   font-size: 1.3rem;
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+  margin: 1rem 0;
+  font-weight: 700;
 }
 
-.ai-achiever-name {
-  color: #E2E8F0;
-  margin: 0.5rem 0;
-  text-shadow: 0 0 15px rgba(226, 232, 240, 0.8);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-}
-
-.ai-certification-name {
-  background: linear-gradient(45deg, #00A8FF, #6C5CE7);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0.5rem 0;
-  text-shadow: 0 0 20px rgba(0, 168, 255, 0.5);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-}
-
-.ai-level-badge {
-  background: linear-gradient(45deg, #6C5CE7, #00A8FF);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.4rem;
-  margin: 0.5rem 0;
-  text-shadow: 0 0 25px rgba(108, 92, 231, 0.6);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-}
-
-.ai-sparkle-effect {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  animation: ai-sparkle 3s ease-in-out infinite;
-}
-
-@keyframes ai-pulse-glow {
-  0%, 100% { text-shadow: 0 0 30px rgba(0, 168, 255, 0.8); }
-  50% { text-shadow: 0 0 50px rgba(0, 168, 255, 1), 0 0 80px rgba(108, 92, 231, 0.6); }
-}
-
-@keyframes ai-sparkle {
-  0%, 100% { 
-    transform: rotate(0deg) scale(1);
-    opacity: 0.7;
-  }
-  50% { 
-    transform: rotate(180deg) scale(1.2);
-    opacity: 1;
-  }
-}
-
-@keyframes ai-pulse {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+strong {
+  font-weight: 600;
 }
 </style>
 
 ---
 
-# 🚀 残り1ヶ月の各自の目標
+# 残り1ヶ月の目標
 
-<div class="grid grid-cols-1 gap-6 pt-4">
+<div class="goals-section">
 
-<div class="ai-goals-container">
+<div class="goals-card">
 
-## <span class="ai-goals-icon">🤖</span> 今後の目標設定
+## 📋 今後の目標設定
 
-<div class="ai-goals-description">
+<div class="goals-description">
 各メンバーの残り1ヶ月での目標を設定し、<br>
-<span class="ai-highlight-goals">継続的な成長と学習を目指します</span>
+<span class="highlight">継続的な成長と学習を目指します</span>
 </div>
 
-<div class="ai-progress-bar">
-  <div class="ai-progress-fill"></div>
+<div class="progress-indicator">
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+  <span class="progress-text">2/3 完了</span>
 </div>
 
 </div>
@@ -456,112 +409,66 @@ h1 {
 </div>
 
 <style>
-h1 {
-  background: linear-gradient(135deg, #00A8FF, #6C5CE7);
-  background-size: 200% 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: ai-pulse 4s ease-in-out infinite;
-  text-shadow: 0 0 30px rgba(0, 168, 255, 0.4);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-}
-
-.ai-goals-container {
-  background: linear-gradient(135deg, 
-    rgba(0, 168, 255, 0.2) 0%, 
-    rgba(108, 92, 231, 0.2) 100%);
-  border: 1px solid rgba(0, 168, 255, 0.4);
-  padding: 2rem;
-  border-radius: 1.2rem;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 15px 35px rgba(0, 168, 255, 0.3);
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-}
-
-.ai-goals-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
+.goals-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-  animation: ai-shimmer 3s infinite;
+  padding-top: 2rem;
 }
 
-.ai-goals-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: inline-block;
-  animation: ai-bounce 2s infinite;
-  color: #00A8FF;
-  text-shadow: 0 0 20px rgba(0, 168, 255, 0.8);
+.goals-card {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(71, 85, 105, 0.4);
+  border-radius: 1.2rem;
+  padding: 3rem;
+  text-align: center;
+  max-width: 36rem;
 }
 
-.ai-goals-description {
-  font-size: 1.2rem;
-  color: #E2E8F0;
-  line-height: 1.8;
-  margin: 1.5rem 0;
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-}
-
-.ai-highlight-goals {
-  background: linear-gradient(45deg, #00A8FF, #6C5CE7);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.goals-card h2 {
+  color: #f8fafc;
+  font-size: 2rem;
   font-weight: 600;
-  text-shadow: 0 0 20px rgba(0, 168, 255, 0.5);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+  margin-bottom: 2rem;
 }
 
-.ai-progress-bar {
-  width: 100%;
-  height: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
+.goals-description {
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.progress-indicator {
   margin-top: 2rem;
 }
 
-.ai-progress-fill {
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(71, 85, 105, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #00A8FF, #6C5CE7);
+  background: #3b82f6;
   border-radius: 4px;
   width: 66%;
-  animation: ai-progress-fill 2s ease-out;
+  transition: width 0.5s ease;
 }
 
-h2 {
-  color: #00A8FF;
-  text-shadow: 0 0 15px rgba(0, 168, 255, 0.6);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
-}
-
-@keyframes ai-shimmer {
-  0% { left: -100%; }
-  100% { left: 100%; }
-}
-
-@keyframes ai-bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-10px); }
-  60% { transform: translateY(-5px); }
-}
-
-@keyframes ai-progress-fill {
-  0% { width: 0%; }
-  100% { width: 66%; }
-}
-
-@keyframes ai-pulse {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+.progress-text {
+  color: #94a3b8;
+  font-size: 0.9rem;
 }
 </style>
 
@@ -570,116 +477,50 @@ layout: center
 class: text-center
 ---
 
-# <span class="ai-final-title">🤖 ありがとうございました！</span>
+# ありがとうございました！
 
-<div class="ai-team-name">チーム <span class="ai-mcp-highlight">MCP</span></div>
+<div class="team-name">チーム <span class="mcp-highlight">MCP</span></div>
 
 <div class="pt-12">
-  <span class="ai-question-prompt px-4 py-2 rounded-lg cursor-pointer transition-all duration-300" hover="bg-blue-400 bg-opacity-20 transform scale-105">
-    💭 ご質問はありますか？
-  </span>
-</div>
-
-<div class="ai-floating-elements">
-  <div class="ai-float-1">🤖</div>
-  <div class="ai-float-2">🧠</div>
-  <div class="ai-float-3">🔄</div>
-  <div class="ai-float-4">🚀</div>
+  <div class="question-prompt">
+    💬 ご質問はありますか？
+  </div>
 </div>
 
 <style>
-.ai-final-title {
-  background: linear-gradient(135deg, #00A8FF, #6C5CE7);
-  background-size: 200% 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: ai-pulse 3s ease-in-out infinite;
-  text-shadow: 0 0 40px rgba(0, 168, 255, 0.6);
-  font-size: 3rem;
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 1rem;
 }
 
-.ai-team-name {
+.team-name {
   font-size: 2rem;
-  color: #E2E8F0;
+  color: #cbd5e1;
   margin: 2rem 0;
-  text-shadow: 0 0 20px rgba(226, 232, 240, 0.5);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+  font-weight: 500;
 }
 
-.ai-mcp-highlight {
-  background: linear-gradient(45deg, #00A8FF, #6C5CE7);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  text-shadow: 0 0 30px rgba(0, 168, 255, 0.8);
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+.mcp-highlight {
+  color: #3b82f6;
+  font-weight: 700;
 }
 
-.ai-question-prompt {
-  background: linear-gradient(45deg, rgba(0, 168, 255, 0.2), rgba(108, 92, 231, 0.2));
-  border: 1px solid rgba(0, 168, 255, 0.5);
-  color: #E2E8F0;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 168, 255, 0.3);
+.question-prompt {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid #3b82f6;
+  color: #e2e8f0;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
   font-size: 1.3rem;
-  font-family: 'Meiryo', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.2s ease;
 }
 
-.ai-floating-elements {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.ai-floating-elements div {
-  position: absolute;
-  font-size: 2rem;
-  animation: ai-float 6s ease-in-out infinite;
-  color: #00A8FF;
-  text-shadow: 0 0 15px rgba(0, 168, 255, 0.8);
-}
-
-.ai-float-1 {
-  top: 20%;
-  left: 15%;
-  animation-delay: 0s;
-}
-
-.ai-float-2 {
-  top: 30%;
-  right: 15%;
-  animation-delay: 1.5s;
-}
-
-.ai-float-3 {
-  bottom: 30%;
-  left: 20%;
-  animation-delay: 3s;
-}
-
-.ai-float-4 {
-  bottom: 25%;
-  right: 20%;
-  animation-delay: 4.5s;
-}
-
-@keyframes ai-float {
-  0%, 100% { 
-    transform: translateY(0px) rotate(0deg);
-    opacity: 0.6;
-  }
-  50% { 
-    transform: translateY(-20px) rotate(180deg);
-    opacity: 1;
-  }
-}
-
-@keyframes ai-pulse {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+.question-prompt:hover {
+  border-color: #60a5fa;
+  background: rgba(30, 41, 59, 0.8);
 }
 </style>

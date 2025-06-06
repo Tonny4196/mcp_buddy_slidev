@@ -11,11 +11,11 @@ highlighter: shiki
 lineNumbers: false
 # some information about the slides, markdown enabled
 info: |
-  ## MCP Buddy Slidev Presentation
+  ## MCP Buddy Slidev プレゼンテーション
   
-  Documentation and presentation for MCP Buddy project.
+  MCP Buddyプロジェクトのドキュメンテーションとプレゼンテーション。
   
-  Learn more at [Sli.dev](https://sli.dev)
+  詳細は [Sli.dev](https://sli.dev) をご覧ください
 # persist drawings in exports and build
 drawings:
   persist: false
@@ -31,7 +31,7 @@ css: unocss
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
+    次のページはスペースキーを押してください <carbon:arrow-right class="inline"/>
   </span>
 </div>
 
@@ -46,33 +46,33 @@ css: unocss
 </div>
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+各スライドの最後のコメントブロックはスライドノートとして扱われます。プレゼンターモードでスライドと一緒に表示・編集できます。[詳細はドキュメントを参照](https://sli.dev/guide/syntax.html#notes)
 -->
 
 ---
 transition: fade-out
 ---
 
-# What is Slidev?
+# Slidevとは？
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+Slidevは開発者向けに設計されたスライド作成・プレゼンテーションツールで、以下の機能を備えています
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+- 📝 **テキストベース** - Markdownでコンテンツに集中し、後でスタイルを設定
+- 🎨 **テーマ対応** - テーマをnpmパッケージで共有・利用可能
+- 🧑‍💻 **開発者フレンドリー** - コードハイライト、自動補完付きライブコーディング
+- 🤹 **インタラクティブ** - Vueコンポーネントの埋め込みで表現力を向上
+- 🎥 **録画機能** - 内蔵の録画機能とカメラビュー
+- 📤 **ポータブル** - PDF、PNG、またはホスト可能なSPAとしてエクスポート
+- 🛠 **ハック可能** - Webページで可能なあらゆることが実現可能
 
 <br>
 <br>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+詳細は [Why Slidev?](https://sli.dev/guide/why) をお読みください
 
 <!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
+Markdownで `style` タグを使用して現在のページのスタイルを上書きできます。
+詳細: https://sli.dev/guide/syntax#embedded-styles
 -->
 
 <style>
@@ -89,52 +89,52 @@ h1 {
 
 ---
 
-# Getting started
+# はじめに
 
-Slidev requires [**Node.js >=14.0**](https://nodejs.org/)
+Slidevには [**Node.js >=14.0**](https://nodejs.org/) が必要です
 
-With npm:
+npmを使用:
 
 ```bash
 $ npm install -g @slidev/cli
 $ slidev
 ```
 
-With yarn:
+yarnを使用:
 
 ```bash
 $ yarn global add @slidev/cli
 $ slidev
 ```
 
-Edit `slides.md` and open <http://localhost:3030> to see the changes.
+`slides.md` を編集して <http://localhost:3030> を開くと変更を確認できます。
 
 ---
 
-# How to use this project
+# このプロジェクトの使用方法
 
-Run the development server:
+開発サーバーを起動:
 
 ```bash
 npm run dev
 ```
 
-Build for production:
+本番用にビルド:
 
 ```bash
 npm run build
 ```
 
-Export to PDF:
+PDFにエクスポート:
 
 ```bash
 npm run export
 ```
 
-Learn more about Slidev on [documentations](https://ja.sli.dev/).
+Slidevの詳細は[ドキュメント](https://ja.sli.dev/)をご覧ください。
 
 ---
 
-# Thank you!
+# ありがとうございました！
 
-Any questions?
+ご質問はありますか？

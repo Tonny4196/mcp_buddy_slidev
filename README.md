@@ -1,38 +1,38 @@
 # MCP Buddy Slidev
 
-This repository contains a Slidev presentation for the MCP Buddy project.
+このリポジトリにはMCP Buddyプロジェクト用のSlidevプレゼンテーションが含まれています。
 
-## Setup
+## セットアップ
 
-1. Install dependencies:
+1. 依存関係をインストール:
 ```bash
 npm install
 ```
 
-2. Run the development server:
+2. 開発サーバーを起動:
 ```bash
 npm run dev
 ```
 
-3. Open <http://localhost:3030> to view your presentation
+3. <http://localhost:3030> を開いてプレゼンテーションを表示
 
-## Commands
+## コマンド
 
-- `npm run dev` - Start the development server
-- `npm run build` - Build for production  
-- `npm run export` - Export to PDF
+- `npm run dev` - 開発サーバーを起動
+- `npm run build` - 本番用にビルド
+- `npm run export` - PDFにエクスポート
 
-## Editing
+## 編集
 
-Edit the `slides.md` file to modify your presentation content. Slidev supports:
+`slides.md` ファイルを編集してプレゼンテーションの内容を変更します。Slidevは以下をサポートします：
 
-- Markdown syntax
-- Vue components
-- Code highlighting
-- Interactive elements
-- Custom themes
+- Markdownシンタックス
+- Vueコンポーネント
+- コードハイライト
+- インタラクティブ要素
+- カスタムテーマ
 
-## Learn More
+## 詳細情報
 
-- [Slidev Documentation](https://ja.sli.dev/)
+- [Slidev ドキュメント](https://ja.sli.dev/)
 - [Slidev GitHub](https://github.com/slidevjs/slidev)

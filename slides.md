@@ -2,7 +2,7 @@
 # try also 'default' to start simple
 theme: seriph
 # random image from a curated Unsplash collection
-background: https://source.unsplash.com/1920x1080/?nature,water
+background: https://source.unsplash.com/1920x1080/?technology,programming
 # apply any windi css classes to the current slide
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
@@ -11,9 +11,9 @@ highlighter: shiki
 lineNumbers: false
 # some information about the slides, markdown enabled
 info: |
-  ## MCP Buddy Slidev プレゼンテーション
+  ## Buddy 中間発表
   
-  MCP Buddyプロジェクトのドキュメンテーションとプレゼンテーション。
+  2ヶ月間プログラムの中間発表資料
   
   詳細は [Sli.dev](https://sli.dev) をご覧ください
 # persist drawings in exports and build
@@ -25,9 +25,9 @@ transition: slide-left
 css: unocss
 ---
 
-# MCP Buddy
+# Buddy 中間発表
 
-プレゼンテーション作成とドキュメント
+2ヶ月間プログラムの中間発表
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -46,34 +46,36 @@ css: unocss
 </div>
 
 <!--
-各スライドの最後のコメントブロックはスライドノートとして扱われます。プレゼンターモードでスライドと一緒に表示・編集できます。[詳細はドキュメントを参照](https://sli.dev/guide/syntax.html#notes)
+Buddy 2ヶ月間プログラムの中間発表スライド
 -->
 
 ---
 transition: fade-out
 ---
 
-# Slidevとは？
+# チーム名の由来
 
-Slidevは開発者向けに設計されたスライド作成・プレゼンテーションツールで、以下の機能を備えています
+<div class="grid grid-cols-1 gap-4">
 
-- 📝 **テキストベース** - Markdownでコンテンツに集中し、後でスタイルを設定
-- 🎨 **テーマ対応** - テーマをnpmパッケージで共有・利用可能
-- 🧑‍💻 **開発者フレンドリー** - コードハイライト、自動補完付きライブコーディング
-- 🤹 **インタラクティブ** - Vueコンポーネントの埋め込みで表現力を向上
-- 🎥 **録画機能** - 内蔵の録画機能とカメラビュー
-- 📤 **ポータブル** - PDF、PNG、またはホスト可能なSPAとしてエクスポート
-- 🛠 **ハック可能** - Webページで可能なあらゆることが実現可能
+## 全員がtech系に関わっている
+- **自分・てぃーぬ：SE**
+- **たなとす：セキュリティ系**
+- **しょうど：情シス**
 
-<br>
-<br>
+<v-click>
 
-詳細は [Why Slidev?](https://sli.dev/guide/why) をお読みください
+## Tech系にまつわる名前にしよう
 
-<!--
-Markdownで `style` タグを使用して現在のページのスタイルを上書きできます。
-詳細: https://sli.dev/guide/syntax#embedded-styles
--->
+</v-click>
+
+<v-click>
+
+## 最初の目標達成のMTGでAIの話をめっちゃした
+**AI系のワードに被せよう → MCPになった**
+
+</v-click>
+
+</div>
 
 <style>
 h1 {
@@ -89,52 +91,97 @@ h1 {
 
 ---
 
-# はじめに
+# チームメンバー
 
-Slidevには [**Node.js >=14.0**](https://nodejs.org/) が必要です
+<div class="grid grid-cols-1 gap-6 pt-4">
 
-npmを使用:
+<div class="bg-blue-50 p-6 rounded-lg">
 
-```bash
-$ npm install -g @slidev/cli
-$ slidev
-```
+## とに
+- **職業：** SE
+- **勉強内容：** 個人開発
+- **最近興味がある分野：** MCP・コーディングエージェント
 
-yarnを使用:
+</div>
 
-```bash
-$ yarn global add @slidev/cli
-$ slidev
-```
-
-`slides.md` を編集して <http://localhost:3030> を開くと変更を確認できます。
+</div>
 
 ---
 
-# このプロジェクトの使用方法
+# 活動内容
 
-開発サーバーを起動:
+<div class="grid grid-cols-1 gap-6">
 
-```bash
-npm run dev
-```
+<v-click>
 
-本番用にビルド:
+## 📚 気になったテック系の情報共有
+チームメンバーが見つけた技術情報やトレンドを共有
 
-```bash
-npm run build
-```
+</v-click>
 
-PDFにエクスポート:
+<v-click>
 
-```bash
-npm run export
-```
+## 💪 筋トレ報告
+健康維持とチームビルディングを兼ねた活動
+*写真入れる*
 
-Slidevの詳細は[ドキュメント](https://ja.sli.dev/)をご覧ください。
+</v-click>
 
+<v-click>
+
+## 🌅 7時朝会
+定期的なコミュニケーションとスケジュール共有
+
+</v-click>
+
+</div>
+
+---
+
+# 成果報告
+
+<div class="flex justify-center items-center h-full">
+
+<div class="bg-gradient-to-r from-green-400 to-blue-500 text-white p-8 rounded-xl text-center">
+
+## 🎉 おめでとうございます！
+
+**てぃーぬさんが**  
+**HTML5プロフェッショナル認定試験**  
+**レベル2に合格**
+
+</div>
+
+</div>
+
+---
+
+# 残り1ヶ月の各自の目標
+
+<div class="grid grid-cols-1 gap-6 pt-4">
+
+<div class="bg-gradient-to-r from-purple-400 to-pink-400 text-white p-6 rounded-lg">
+
+## 📋 今後の目標設定
+
+各メンバーの残り1ヶ月での目標を設定し、  
+継続的な成長と学習を目指します
+
+</div>
+
+</div>
+
+---
+layout: center
+class: text-center
 ---
 
 # ありがとうございました！
 
-ご質問はありますか？
+チーム MCP
+
+<div class="pt-12">
+  <span class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
+    ご質問はありますか？
+  </span>
+</div>

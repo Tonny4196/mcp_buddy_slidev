@@ -94,7 +94,7 @@ layout: default
 
 # チーム名の由来
 
-<div class="space-y-6 text-left max-w-4xl mx-auto px-6">
+<div class="space-y-6 text-left max-w-3xl mx-auto px-4 w-11/12" style="box-sizing: border-box; max-width: min(48rem, 90vw)">
 
 <div class="origin-step">
 

@@ -92,7 +92,7 @@ layout: default
 
 # チーム名の由来
 
-<div class="space-y-8 text-left max-w-4xl mx-auto">
+<div class="space-y-6 text-left max-w-5xl mx-auto px-8">
 
 <div class="origin-step">
 
@@ -143,10 +143,10 @@ h2 {
 
 .origin-step {
   background: #f8f9fa;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 0.75rem;
   border: 1px solid #e9ecef;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .origin-step.highlight {
@@ -199,6 +199,8 @@ h1 {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .member-card {
@@ -206,7 +208,8 @@ h1 {
   border: 1px solid #e9ecef;
   border-radius: 1rem;
   padding: 2.5rem;
-  max-width: 28rem;
+  max-width: 36rem;
+  width: 100%;
   transition: all 0.2s ease;
 }
 
@@ -288,9 +291,9 @@ h1 {
 
 .activities-grid {
   display: grid;
-  gap: 1.5rem;
-  padding-top: 2rem;
-  max-width: 4xl;
+  gap: 1.2rem;
+  padding: 2rem 2rem 0 2rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -298,7 +301,7 @@ h1 {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 0.75rem;
-  padding: 2rem;
+  padding: 1.5rem;
   transition: all 0.2s ease;
   position: relative;
 }
@@ -362,23 +365,25 @@ h1 {
   background: #f8f9fa;
   border: 2px solid #10b981;
   border-radius: 1.5rem;
-  padding: 3rem;
+  padding: 2.5rem;
   text-align: center;
-  max-width: 32rem;
+  max-width: 40rem;
+  width: 90%;
   position: relative;
   box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
+  margin: 0 auto;
 }
 
 .achievement-card h2 {
   color: #f59e0b;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .achievement-details {
-  font-size: 1.2rem;
-  line-height: 1.8;
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
 .achiever-name {
@@ -443,30 +448,31 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-top: 2rem;
+  padding: 2rem;
 }
 
 .goals-card {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 1.2rem;
-  padding: 3rem;
+  padding: 2.5rem;
   text-align: center;
-  max-width: 36rem;
+  max-width: 42rem;
+  width: 90%;
 }
 
 .goals-card h2 {
   color: #1a1a1a;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .goals-description {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: #555555;
-  line-height: 1.8;
-  margin-bottom: 2rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
 }
 
 .highlight {

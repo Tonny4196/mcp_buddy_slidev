@@ -1,8 +1,8 @@
 ---
 # Anthony Fu inspired clean theme
 theme: default
-# Clean gradient background
-background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%)
+# Clean light background
+background: '#ffffff'
 # apply any windi css classes to the current slide
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
@@ -52,19 +52,19 @@ fonts:
 h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #f8fafc;
+  color: #1a1a1a;
   margin-bottom: 0.5rem;
 }
 
 .subtitle {
-  color: #94a3b8;
+  color: #666666;
   font-size: 1.25rem;
   font-weight: 400;
   margin-top: 1rem;
 }
 
 .nav-button {
-  background: #3b82f6;
+  background: #10b981;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
@@ -77,7 +77,7 @@ h1 {
 }
 
 .nav-button:hover {
-  background: #2563eb;
+  background: #059669;
   transform: translateY(-1px);
 }
 </style>
@@ -128,44 +128,45 @@ layout: default
 
 <style>
 h1 {
-  color: #f8fafc;
+  color: #1a1a1a;
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
 }
 
 h2 {
-  color: #e2e8f0;
+  color: #333333;
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .origin-step {
-  background: rgba(30, 41, 59, 0.5);
+  background: #f8f9fa;
   padding: 2rem;
   border-radius: 0.75rem;
-  border: 1px solid rgba(71, 85, 105, 0.3);
+  border: 1px solid #e9ecef;
+  margin-bottom: 1.5rem;
 }
 
 .origin-step.highlight {
-  border-color: #3b82f6;
-  background: rgba(59, 130, 246, 0.1);
+  border-color: #10b981;
+  background: #f0fdf4;
 }
 
 .team-name {
-  color: #3b82f6;
+  color: #10b981;
   font-weight: 700;
   font-size: 1.2em;
 }
 
 li {
-  color: #cbd5e1;
+  color: #555555;
   margin: 0.5rem 0;
 }
 
 strong {
-  color: #f1f5f9;
+  color: #1a1a1a;
 }
 </style>
 
@@ -187,6 +188,13 @@ strong {
 </div>
 
 <style>
+h1 {
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .members-container {
   display: flex;
   justify-content: center;
@@ -194,8 +202,8 @@ strong {
 }
 
 .member-card {
-  background: rgba(30, 41, 59, 0.6);
-  border: 1px solid rgba(71, 85, 105, 0.4);
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
   border-radius: 1rem;
   padding: 2.5rem;
   max-width: 28rem;
@@ -204,12 +212,12 @@ strong {
 
 .member-card:hover {
   transform: translateY(-2px);
-  border-color: #3b82f6;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-color: #10b981;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .member-card h2 {
-  color: #f8fafc;
+  color: #1a1a1a;
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -217,13 +225,13 @@ strong {
 }
 
 .member-card li {
-  color: #cbd5e1;
+  color: #555555;
   margin: 0.75rem 0;
   font-size: 1.1rem;
 }
 
 .member-card strong {
-  color: #f1f5f9;
+  color: #1a1a1a;
   font-weight: 600;
 }
 </style>
@@ -271,6 +279,13 @@ strong {
 </div>
 
 <style>
+h1 {
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .activities-grid {
   display: grid;
   gap: 1.5rem;
@@ -280,8 +295,8 @@ strong {
 }
 
 .activity-item {
-  background: rgba(30, 41, 59, 0.5);
-  border: 1px solid rgba(71, 85, 105, 0.3);
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
   border-radius: 0.75rem;
   padding: 2rem;
   transition: all 0.2s ease;
@@ -290,25 +305,25 @@ strong {
 
 .activity-item:hover {
   transform: translateY(-2px);
-  border-color: #3b82f6;
-  background: rgba(30, 41, 59, 0.7);
+  border-color: #10b981;
+  background: #f0fdf4;
 }
 
 .activity-item h2 {
-  color: #f8fafc;
+  color: #1a1a1a;
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .activity-desc {
-  color: #cbd5e1;
+  color: #555555;
   font-size: 1.1rem;
   line-height: 1.6;
 }
 
 .note-text {
-  color: #94a3b8;
+  color: #888888;
   font-style: italic;
   margin-top: 0.75rem;
   font-size: 0.95rem;
@@ -336,19 +351,26 @@ strong {
 </div>
 
 <style>
+h1 {
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .achievement-card {
-  background: rgba(30, 41, 59, 0.6);
-  border: 2px solid #3b82f6;
+  background: #f8f9fa;
+  border: 2px solid #10b981;
   border-radius: 1.5rem;
   padding: 3rem;
   text-align: center;
   max-width: 32rem;
   position: relative;
-  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
 }
 
 .achievement-card h2 {
-  color: #fbbf24;
+  color: #f59e0b;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -360,12 +382,12 @@ strong {
 }
 
 .achiever-name {
-  color: #e2e8f0;
+  color: #333333;
   margin: 1rem 0;
 }
 
 .certification-name {
-  color: #3b82f6;
+  color: #1a1a1a;
   margin: 1rem 0;
   font-weight: 600;
 }
@@ -409,6 +431,13 @@ strong {
 </div>
 
 <style>
+h1 {
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .goals-section {
   display: flex;
   justify-content: center;
@@ -418,8 +447,8 @@ strong {
 }
 
 .goals-card {
-  background: rgba(30, 41, 59, 0.6);
-  border: 1px solid rgba(71, 85, 105, 0.4);
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
   border-radius: 1.2rem;
   padding: 3rem;
   text-align: center;
@@ -427,7 +456,7 @@ strong {
 }
 
 .goals-card h2 {
-  color: #f8fafc;
+  color: #1a1a1a;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -435,13 +464,13 @@ strong {
 
 .goals-description {
   font-size: 1.25rem;
-  color: #cbd5e1;
+  color: #555555;
   line-height: 1.8;
   margin-bottom: 2rem;
 }
 
 .highlight {
-  color: #3b82f6;
+  color: #10b981;
   font-weight: 600;
 }
 
@@ -452,7 +481,7 @@ strong {
 .progress-bar {
   width: 100%;
   height: 8px;
-  background: rgba(71, 85, 105, 0.3);
+  background: #e5e7eb;
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 0.75rem;
@@ -460,14 +489,14 @@ strong {
 
 .progress-fill {
   height: 100%;
-  background: #3b82f6;
+  background: #10b981;
   border-radius: 4px;
   width: 66%;
   transition: width 0.5s ease;
 }
 
 .progress-text {
-  color: #94a3b8;
+  color: #888888;
   font-size: 0.9rem;
 }
 </style>
@@ -491,26 +520,26 @@ class: text-center
 h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #f8fafc;
+  color: #1a1a1a;
   margin-bottom: 1rem;
 }
 
 .team-name {
   font-size: 2rem;
-  color: #cbd5e1;
+  color: #555555;
   margin: 2rem 0;
   font-weight: 500;
 }
 
 .mcp-highlight {
-  color: #3b82f6;
+  color: #10b981;
   font-weight: 700;
 }
 
 .question-prompt {
-  background: rgba(30, 41, 59, 0.6);
-  border: 1px solid #3b82f6;
-  color: #e2e8f0;
+  background: #f8f9fa;
+  border: 1px solid #10b981;
+  color: #1a1a1a;
   padding: 1rem 2rem;
   border-radius: 0.75rem;
   font-size: 1.3rem;
@@ -520,7 +549,7 @@ h1 {
 }
 
 .question-prompt:hover {
-  border-color: #60a5fa;
-  background: rgba(30, 41, 59, 0.8);
+  border-color: #059669;
+  background: #f0fdf4;
 }
 </style>

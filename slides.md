@@ -49,12 +49,22 @@ fonts:
 </div>
 
 <style>
+/* Global responsive overflow prevention */
+* {
+  box-sizing: border-box;
+}
+
+.slidev-layout {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 0.5rem;
-  padding: 0 2rem;
+  padding: 0 clamp(1rem, 3vw, 2rem);
   box-sizing: border-box;
 }
 
@@ -94,7 +104,7 @@ layout: default
 
 # チーム名の由来
 
-<div class="space-y-6 text-left max-w-3xl mx-auto px-4 w-11/12" style="box-sizing: border-box; max-width: min(48rem, 90vw)">
+<div class="space-y-6 text-left mx-auto px-4 w-11/12" style="box-sizing: border-box; max-width: 85vw; width: clamp(300px, 85vw, 900px);">
 
 <div class="origin-step">
 
@@ -200,7 +210,7 @@ h1 {
 .members-container {
   display: flex;
   justify-content: center;
-  padding: 2rem 3rem 0 3rem;
+  padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 5vw, 3rem) 0 clamp(1rem, 5vw, 3rem);
   max-width: 100vw;
   box-sizing: border-box;
 }
@@ -209,9 +219,9 @@ h1 {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 1rem;
-  padding: 2rem;
-  max-width: 32rem;
-  width: 90%;
+  padding: clamp(1rem, 4vw, 2rem);
+  max-width: 75vw;
+  width: clamp(300px, 75vw, 600px);
   transition: all 0.2s ease;
   margin: 0 auto;
   box-sizing: border-box;
@@ -296,10 +306,10 @@ h1 {
 .activities-grid {
   display: grid;
   gap: 1.2rem;
-  padding: 2rem 3rem 0 3rem;
-  max-width: 50rem;
+  padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 5vw, 3rem) 0 clamp(1rem, 5vw, 3rem);
+  max-width: 80vw;
   margin: 0 auto;
-  width: 90%;
+  width: clamp(300px, 80vw, 800px);
   box-sizing: border-box;
 }
 
@@ -371,10 +381,10 @@ h1 {
   background: #f8f9fa;
   border: 2px solid #10b981;
   border-radius: 1.5rem;
-  padding: 2rem;
+  padding: clamp(1rem, 4vw, 2rem);
   text-align: center;
-  max-width: 36rem;
-  width: 85%;
+  max-width: 75vw;
+  width: clamp(300px, 75vw, 600px);
   position: relative;
   box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
   margin: 0 auto;
@@ -455,7 +465,7 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 2rem 3rem;
+  padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 5vw, 3rem);
   box-sizing: border-box;
 }
 
@@ -463,10 +473,10 @@ h1 {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 1.2rem;
-  padding: 2rem;
+  padding: clamp(1rem, 4vw, 2rem);
   text-align: center;
-  max-width: 38rem;
-  width: 85%;
+  max-width: 75vw;
+  width: clamp(300px, 75vw, 600px);
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -534,11 +544,11 @@ class: text-center
 
 <style>
 h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 1rem;
-  padding: 0 2rem;
+  padding: 0 clamp(1rem, 3vw, 2rem);
   box-sizing: border-box;
 }
 

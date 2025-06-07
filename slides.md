@@ -49,22 +49,13 @@ fonts:
 </div>
 
 <style>
-/* Global responsive fixes */
-* {
-  box-sizing: border-box;
-}
-
-.slidev-layout {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
 h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: 3rem;
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 0.5rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 .subtitle {
@@ -103,7 +94,7 @@ layout: default
 
 # チーム名の由来
 
-<div class="space-y-6 text-left max-w-4xl mx-auto px-4 w-11/12">
+<div class="space-y-6 text-left max-w-4xl mx-auto px-6">
 
 <div class="origin-step">
 
@@ -143,14 +134,12 @@ h1 {
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
-  font-size: clamp(2rem, 4vw, 3rem);
-  padding: 0 1rem;
 }
 
 h2 {
   color: #333333;
   font-weight: 600;
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -206,15 +195,14 @@ h1 {
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
-  font-size: clamp(2rem, 4vw, 3rem);
-  padding: 0 1rem;
 }
 
 .members-container {
   display: flex;
   justify-content: center;
-  padding: 2rem 1rem 0 1rem;
+  padding: 2rem 3rem 0 3rem;
   max-width: 100vw;
+  box-sizing: border-box;
 }
 
 .member-card {
@@ -226,6 +214,7 @@ h1 {
   width: 90%;
   transition: all 0.2s ease;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .member-card:hover {
@@ -302,17 +291,16 @@ h1 {
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
-  font-size: clamp(2rem, 4vw, 3rem);
-  padding: 0 1rem;
 }
 
 .activities-grid {
   display: grid;
-  gap: 1rem;
-  padding: 2rem 1rem 0 1rem;
-  max-width: 54rem;
+  gap: 1.2rem;
+  padding: 2rem 3rem 0 3rem;
+  max-width: 50rem;
   margin: 0 auto;
-  width: 95%;
+  width: 90%;
+  box-sizing: border-box;
 }
 
 .activity-item {
@@ -377,8 +365,6 @@ h1 {
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
-  font-size: clamp(2rem, 4vw, 3rem);
-  padding: 0 1rem;
 }
 
 .achievement-card {
@@ -392,6 +378,7 @@ h1 {
   position: relative;
   box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .achievement-card h2 {
@@ -461,8 +448,6 @@ h1 {
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
-  font-size: clamp(2rem, 4vw, 3rem);
-  padding: 0 1rem;
 }
 
 .goals-section {
@@ -470,7 +455,8 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 1rem;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
 }
 
 .goals-card {
@@ -481,6 +467,7 @@ h1 {
   text-align: center;
   max-width: 38rem;
   width: 85%;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -547,19 +534,19 @@ class: text-center
 
 <style>
 h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: 3rem;
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 1rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 .team-name {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: 2rem;
   color: #555555;
   margin: 2rem 0;
   font-weight: 500;
-  padding: 0 1rem;
 }
 
 .mcp-highlight {
@@ -571,13 +558,12 @@ h1 {
   background: #f8f9fa;
   border: 1px solid #10b981;
   color: #1a1a1a;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 0.75rem;
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-size: 1.3rem;
   font-weight: 500;
   display: inline-block;
   transition: all 0.2s ease;
-  margin: 0 1rem;
 }
 
 .question-prompt:hover {

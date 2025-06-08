@@ -104,7 +104,7 @@ layout: default
 
 # チーム名の由来
 
-<div class="space-y-6 text-left mx-auto px-4" style="max-width: 800px; width: 90%; box-sizing: border-box;">
+<div class="space-y-6 text-left mx-auto px-4" style="max-width: 800px; width: 90%; height: 450px; box-sizing: border-box; overflow-y: auto; padding-top: 1rem;">
 
 <div class="origin-step">
 
@@ -143,23 +143,29 @@ layout: default
 h1 {
   color: #1a1a1a;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
+  font-size: 2.5rem;
 }
 
 h2 {
   color: #333333;
   font-weight: 600;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
 }
 
 .origin-step {
   background: #f8f9fa;
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 0.75rem;
   border: 1px solid #e9ecef;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
+  height: auto;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .origin-step.highlight {
@@ -175,11 +181,13 @@ h2 {
 
 li {
   color: #555555;
-  margin: 0.5rem 0;
+  margin: 0.4rem 0;
+  font-size: 1rem;
 }
 
 strong {
   color: #1a1a1a;
+  font-weight: 600;
 }
 </style>
 

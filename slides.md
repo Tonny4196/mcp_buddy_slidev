@@ -551,35 +551,35 @@ h1 {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 1.2rem;
-  padding: 1.2rem;
+  padding: 0.8rem;
   text-align: center;
   max-width: 850px;
   width: 95%;
   height: 380px;
-  overflow-y: auto;
+  overflow: hidden;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
 .goals-card h2 {
   color: #1a1a1a;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .individual-goals {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: 0.7rem;
+  margin-top: 1rem;
 }
 
 .goal-member {
   background: #f0fdf4;
   border: 1px solid #d1fae5;
   border-radius: 0.75rem;
-  padding: 1.2rem;
+  padding: 0.8rem;
   transition: all 0.2s ease;
 }
 
@@ -591,9 +591,9 @@ h1 {
 
 .goal-member h3 {
   color: #1a1a1a;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
@@ -605,8 +605,8 @@ h1 {
 
 .goal-member li {
   color: #555555;
-  font-size: 1rem;
-  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
   padding-left: 1rem;
   position: relative;
 }

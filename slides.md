@@ -238,23 +238,27 @@ h1 {
 .members-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  padding: 1rem 2rem 0 2rem;
+  gap: 1.2rem;
+  padding: 0.5rem 2rem;
   max-width: 900px;
+  height: 450px;
   margin: 0 auto;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .member-card {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1.2rem;
   max-width: 400px;
   width: 100%;
+  height: 200px;
   transition: all 0.2s ease;
   margin: 0 auto;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .member-card:hover {
@@ -335,21 +339,28 @@ h1 {
 
 .activities-grid {
   display: grid;
-  gap: 1.2rem;
-  padding: 1rem 2rem 0 2rem;
+  gap: 1rem;
+  padding: 0.5rem 2rem;
   max-width: 800px;
+  height: 450px;
   margin: 0 auto;
   width: 90%;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .activity-item {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 0.75rem;
-  padding: 1.5rem;
+  padding: 1.2rem;
+  height: 120px;
   transition: all 0.2s ease;
   position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .activity-item:hover {
@@ -383,7 +394,7 @@ h1 {
 
 # 成果報告
 
-<div class="flex justify-center items-center h-full">
+<div class="flex justify-center items-center" style="height: 450px; padding: 2rem 0;">
 
 <div class="achievement-card">
 
@@ -411,14 +422,18 @@ h1 {
   background: #f8f9fa;
   border: 2px solid #10b981;
   border-radius: 1.5rem;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
   max-width: 600px;
   width: 90%;
+  height: 300px;
   position: relative;
   box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
   margin: 0 auto;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .achievement-card h2 {
@@ -518,19 +533,22 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 500px;
+  height: 420px;
   padding: 1rem 2rem;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .goals-card {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 1.2rem;
-  padding: 1.5rem;
+  padding: 1.2rem;
   text-align: center;
   max-width: 850px;
   width: 95%;
+  height: 380px;
+  overflow-y: auto;
   box-sizing: border-box;
   margin: 0 auto;
 }

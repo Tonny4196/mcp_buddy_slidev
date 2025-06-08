@@ -109,7 +109,8 @@ layout: default
 <div class="origin-step">
 
 ## 全員がtech系に関わっている
-- **自分・てぃーぬ：SE**
+- **とに：SE**
+- **てぃーぬ：FE**
 - **たなとす：セキュリティ系**
 - **しょうど：情シス**
 
@@ -197,6 +198,33 @@ strong {
 
 </div>
 
+<div class="member-card">
+
+## てぃーぬ 💻
+- **職業：** FE（フロントエンドエンジニア）
+- **勉強内容：** JavaScript・ディープラーニングG検定
+- **最近興味がある分野：** AIを使ったコーディング
+
+</div>
+
+<div class="member-card">
+
+## たなとす 🔒
+- **職業：** ICS系 セキュリティ
+- **勉強内容：** 脆弱性評価・サイバー攻撃対策
+- **最近興味がある分野：** obsidianのAI活用
+
+</div>
+
+<div class="member-card">
+
+## しょうど（しょうどうぶつ） 🖥️
+- **職業：** 社内情シス
+- **勉強内容：** 簿記3級
+- **最近興味がある分野：** 情報セキュリティ全般・情報リテラシー
+
+</div>
+
 </div>
 
 <style>
@@ -208,8 +236,9 @@ h1 {
 }
 
 .members-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
   padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 5vw, 3rem) 0 clamp(1rem, 5vw, 3rem);
   max-width: 100vw;
   box-sizing: border-box;
@@ -434,18 +463,42 @@ strong {
 
 <div class="goals-card">
 
-## 📋 今後の目標設定
+## 📋 各メンバーの個別目標
 
-<div class="goals-description">
-各メンバーの残り1ヶ月での目標を設定し、<br>
-<span class="highlight">継続的な成長と学習を目指します</span>
+<div class="individual-goals">
+
+<div class="goal-member">
+<h3>🤖 とに</h3>
+<ul>
+<li>個人開発プロジェクトの継続</li>
+<li>MCPとコーディングエージェントの深掘り</li>
+</ul>
 </div>
 
-<div class="progress-indicator">
-  <div class="progress-bar">
-    <div class="progress-fill"></div>
-  </div>
-  <span class="progress-text">2/3 完了</span>
+<div class="goal-member">
+<h3>💻 てぃーぬ</h3>
+<ul>
+<li>9月受験に向けたディープラーニングG検定の勉強</li>
+<li>プチ増量期で筋肉を1kgぐらい増やす</li>
+</ul>
+</div>
+
+<div class="goal-member">
+<h3>🔒 たなとす</h3>
+<ul>
+<li>10月に受けるかもしれないセキスペの勉強</li>
+<li>6月は100km走る</li>
+</ul>
+</div>
+
+<div class="goal-member">
+<h3>🖥️ しょうど</h3>
+<ul>
+<li>簿記3級の勉強</li>
+<li>体重維持</li>
+</ul>
+</div>
+
 </div>
 
 </div>
@@ -488,42 +541,55 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-.goals-description {
-  font-size: 1.15rem;
-  color: #555555;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
+.individual-goals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
 }
 
-.highlight {
+.goal-member {
+  background: #f0fdf4;
+  border: 1px solid #d1fae5;
+  border-radius: 0.75rem;
+  padding: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.goal-member:hover {
+  transform: translateY(-2px);
+  border-color: #10b981;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+}
+
+.goal-member h3 {
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.goal-member ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.goal-member li {
+  color: #555555;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.goal-member li:before {
+  content: "→";
   color: #10b981;
   font-weight: 600;
-}
-
-.progress-indicator {
-  margin-top: 2rem;
-}
-
-.progress-bar {
-  width: 100%;
-  height: 8px;
-  background: #e5e7eb;
-  border-radius: 4px;
-  overflow: hidden;
-  margin-bottom: 0.75rem;
-}
-
-.progress-fill {
-  height: 100%;
-  background: #10b981;
-  border-radius: 4px;
-  width: 66%;
-  transition: width 0.5s ease;
-}
-
-.progress-text {
-  color: #888888;
-  font-size: 0.9rem;
+  position: absolute;
+  left: 0;
 }
 </style>
 

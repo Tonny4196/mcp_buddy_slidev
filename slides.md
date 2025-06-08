@@ -56,15 +56,15 @@ fonts:
 
 .slidev-layout {
   overflow-x: hidden !important;
-  max-width: 100vw !important;
+  max-width: 100% !important;
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: 2.5rem;
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 0.5rem;
-  padding: 0 clamp(1rem, 3vw, 2rem);
+  padding: 0 2rem;
   box-sizing: border-box;
 }
 
@@ -104,7 +104,7 @@ layout: default
 
 # チーム名の由来
 
-<div class="space-y-6 text-left mx-auto px-4 w-11/12" style="box-sizing: border-box; max-width: 85vw; width: clamp(300px, 85vw, 900px);">
+<div class="space-y-6 text-left mx-auto px-4" style="max-width: 800px; width: 90%; box-sizing: border-box;">
 
 <div class="origin-step">
 
@@ -237,10 +237,11 @@ h1 {
 
 .members-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 5vw, 3rem) 0 clamp(1rem, 5vw, 3rem);
-  max-width: 100vw;
+  padding: 1rem 2rem 0 2rem;
+  max-width: 900px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -248,9 +249,9 @@ h1 {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 1rem;
-  padding: clamp(1rem, 4vw, 2rem);
-  max-width: 75vw;
-  width: clamp(300px, 75vw, 600px);
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 100%;
   transition: all 0.2s ease;
   margin: 0 auto;
   box-sizing: border-box;
@@ -335,10 +336,10 @@ h1 {
 .activities-grid {
   display: grid;
   gap: 1.2rem;
-  padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 5vw, 3rem) 0 clamp(1rem, 5vw, 3rem);
-  max-width: 80vw;
+  padding: 1rem 2rem 0 2rem;
+  max-width: 800px;
   margin: 0 auto;
-  width: clamp(300px, 80vw, 800px);
+  width: 90%;
   box-sizing: border-box;
 }
 
@@ -410,10 +411,10 @@ h1 {
   background: #f8f9fa;
   border: 2px solid #10b981;
   border-radius: 1.5rem;
-  padding: clamp(1rem, 4vw, 2rem);
+  padding: 2rem;
   text-align: center;
-  max-width: 75vw;
-  width: clamp(300px, 75vw, 600px);
+  max-width: 600px;
+  width: 90%;
   position: relative;
   box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
   margin: 0 auto;
@@ -516,9 +517,9 @@ h1 {
 .goals-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 5vw, 3rem);
+  align-items: flex-start;
+  min-height: 500px;
+  padding: 1rem 2rem;
   box-sizing: border-box;
 }
 
@@ -526,10 +527,10 @@ h1 {
   background: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 1.2rem;
-  padding: clamp(1rem, 4vw, 2rem);
+  padding: 1.5rem;
   text-align: center;
-  max-width: 75vw;
-  width: clamp(300px, 75vw, 600px);
+  max-width: 850px;
+  width: 95%;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -543,8 +544,8 @@ h1 {
 
 .individual-goals {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   margin-top: 1.5rem;
 }
 
@@ -610,11 +611,11 @@ class: text-center
 
 <style>
 h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: 2.5rem;
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 1rem;
-  padding: 0 clamp(1rem, 3vw, 2rem);
+  padding: 0 2rem;
   box-sizing: border-box;
 }
 
